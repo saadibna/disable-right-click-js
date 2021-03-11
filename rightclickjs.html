@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Right Click Disable</title>
+</head>
+<body>
+
+    <h1 >hey, you can not click right through mouse</h1>
+    <script>
+
+        window.addEventListener('contextmenu', function (e) {
+        document.body.innerHTML += '<p>Right-click is disabled</p>'
+        e.preventDefault();
+        }, false);
+
+       
+        // window.addEventListener('selectstart', function (e) {
+        // document.getElementById('me').innerHTML += '<p>you can not select text</p>'
+        // e.preventDefault();
+        // }, false);
+       
+    </script>
+</body>
+</html>
